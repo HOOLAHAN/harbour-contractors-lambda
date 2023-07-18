@@ -1,5 +1,3 @@
-org: iainhoolahan
-app: harbour-contractors-lambda
 service: harbour-contractors-lambda
 frameworkVersion: '3'
 
@@ -9,8 +7,6 @@ provider:
   stage: prod
   region: eu-west-2
   environment:
-    require: dotenv/config
-    dotenv: true
     TWILIO_ACCOUNT_SID: ${env:TWILIO_ACCOUNT_SID}
     TWILIO_AUTH_TOKEN: ${env:TWILIO_AUTH_TOKEN}
     TWILIO_PHONE_NUMBER: ${env:TWILIO_PHONE_NUMBER}
