@@ -15,7 +15,7 @@ module.exports.sendMessage = async (event) => {
           message: 'Message sent successfully',
           name: name,
           email: email,
-          text_message: message
+          text_message: text_message
         },
         null,
         2
