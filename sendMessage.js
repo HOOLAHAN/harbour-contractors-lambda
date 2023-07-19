@@ -1,6 +1,7 @@
 const sendMessage = require("./lib/sendMessage");
 
 module.exports.sendMessage = async (event) => {
+  console.log("Received event:", JSON.stringify(event));
   const req = JSON.parse(event.body);
 
   const name = req.name;
