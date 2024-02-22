@@ -8,8 +8,8 @@ module.exports.listProjectImages = async (event) => {
   
   try {
     const params = {
-      Bucket: "harbourcontractorsimages", // Replace with your actual bucket name
-      Prefix: `${projectName} `, // Adjust based on your file naming convention
+      Bucket: "harbourcontractorsimages",
+      Prefix: `${projectName} `,
     };
 
     const data = await s3Client.listObjectsV2(params).promise();
