@@ -26,3 +26,9 @@ functions:
       - httpApi:
           path: /sendMessage
           method: post
+  listProjectImages:
+    handler: listProjectImages.handler
+    events:
+      - httpApi:
+          path: /listProjectImages/{projectName}
+          method: get
