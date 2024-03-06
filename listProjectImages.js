@@ -10,7 +10,7 @@ exports.handler = async (event) => {
     // Extract the projectName from the path parameter
     const projectName = event.pathParameters.projectName;
 
-    const prefix = `${projectName}/`; // Adjusted to match your folder structure
+    const prefix = `${projectName}/`;
 
     try {
         const s3Params = {
