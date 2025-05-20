@@ -7,5 +7,5 @@ jspm_packages
 
 # Misc
 .env
-DS_Store
+.DS_Store
 .vs
